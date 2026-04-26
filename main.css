@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cyan: #d8b4fe;
+    --purple: #c084fc;
+    --bg: #0d0614;
+    --bg2: #1a1028;
+    --text: #fdf4ff;
+    --text-dim: #c4b5d8;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    background: rgba(13,6,20,0.85);
+    border-bottom: 1px solid rgba(192,132,252,0.12);
+}
+
+.nav-logo {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--cyan);
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.hero-text {
+    max-width: 700px;
+    text-align: center;
+}
+
+.glitch {
+    font-size: 4rem;
+    color: var(--cyan);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-line {
+    margin: 1rem 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.prompt {
+    color: var(--purple);
+}
+
+.hero-description {
+    color: var(--text-dim);
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.btn-primary {
+    background: var(--cyan);
+    color: var(--bg);
+}
+
+.btn-secondary {
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+}
+
+.section {
+    padding: 5rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--cyan);
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 3rem;
+}
+
+.grid-1 {
+    max-width: 800px;
+    margin: auto;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(26,16,40,0.75);
+    border: 1px solid rgba(192,132,252,0.15);
+    padding: 1.5rem;
+    border-radius: 16px;
+}
+
+.card p {
+    color: var(--text-dim);
+    line-height: 1.7;
+}
+
+pre {
+    white-space: pre-wrap;
+    color: var(--text-dim);
+}
