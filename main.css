@@ -333,3 +333,32 @@ body {
         text-align: center;
     }
 }
+/* --- DOCUMENTATION PAGE STYLES --- */
+.doc-card {
+    margin-bottom: 2rem;
+}
+
+.doc-desc {
+    color: var(--text-dim);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.command-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.command-item {
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 3px solid var(--primary);
+    padding: 1.25rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.command-item p {
+    margin-top: 0.5rem;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+}
